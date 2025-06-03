@@ -116,8 +116,9 @@ Le <ins>**deuxième selecteur**</ins> définie le <ins>**nombre d'instance</ins>
 ![Dashboard view](/figures/dash4.png)
 
 - <ins>**Zoom</ins>** à l'aide de la molette de la souris
-- <ins>**Déplacement</ins>** du réseau sur la page en gardant clic-droit appuyé avec le mouvement désiré.
-- Au survol de la souris sur une node / un joueur, vous pouvez faire ressortir son <ins>**sous-réseau</ins>** (tous les autres joueurs ayant effectué au moins un donjon avec le joueuer) ainsi que les <ins>**informations du joueur</ins>**.
+- <ins>**Déplacement du réseau</ins>** sur la page à l'aide d'un clic-gauche sur la page avec un mouvement de souris.
+- Au survol de la souris sur une node / un joueur, vous pouvez faire ressortir son <ins>**sous-réseau</ins>** (tous les autres joueurs ayant effectué au moins un donjon avec le joueuer) ainsi que les <ins>**informations du joueur</ins>** (nom, classe, race, rôle, royaume, région et faction).
+- <ins>**Déplacement d'un joueur<ins>** dans le réseau en gardant le clic-gauche enfoncé sur sa node avec un mouvement de souris.
 
 ## Installation
 Ce projet n'est pas hébergé sur un serveur, il faut donc le faire tourner localement sur votre machine. Voici un exemple pour le lancer à partir du logiciel Visual Studio Code :
