@@ -96,6 +96,12 @@ Les <ins>**liens**</ins> correspondent au donjon. Un lien existe entre deux joue
 
 ## Interface
 
+L'interface est composé d'un titre, de deux selecteurs, d'une légende des classes, d'une indication sur les fonctionnalités claviers d'interaction ainsi que de l'espace reservé au réseau.
+
+Le <ins>**premier selecteur**</ins> permet de choisir une région dans laquelle le jeu est disponible. Ces régions étant fermées les unes aux autres, il est important que chacune possède leur propre visualisation (deux joueurs de régions différentes ne peuvent jouer ensemble). Les régions disponibles dans le selecteur sont inspiré de la variable `region`, soit : `Europe`, `Etats-Unis`, `Chine`, `Taïwan` et `Corée du Sud`.
+
+Le <ins>**deuxième selecteur**</ins>
+
 ## Mise à jour des données
 
 ## A propos du Reseau World of Warcraft mythique+
