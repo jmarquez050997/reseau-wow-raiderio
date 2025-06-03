@@ -6,7 +6,7 @@ Visualisation [D3JS](https://d3js.org/) en réseau des joueurs de mythique+ dans
 ![Dashboard view](/figures/dash1.png)
 
 ## Données raider.io
-Raider.io est un site communautaire, spécialisé dans le suivi et le classement des performances en donjons mythique+ et en raids. Il est largement utilisé par les joueurs pour évaluer leur progression personnelle, rechercher des groupes ou des guildes, et suivre les classements mondiaux. Le site possède sa propre api, nommé Raider.IO Developer API (https://raider.io/api), qui a été utilisé afin d'extraire les informations des meilleurs donjons mythique+. Ce mode de jeu est le plus populaire parmis les joueurs. Chaque groupe peut être constitué de maximum 5 joueurs avec en général 1 tank, 1 soigneur et 3 dps. Les donjons mythique+ possèdent un niveau de difficulté croissant et la réussite du défi offre la possiblité de passer au niveau supérieur. L'objectif pour les joueurs est de tuer 100% des ennemis requis dans l'instance ainsi que l'entierté des boss avant la fin du temps imparti. Le classement est généré en fonction du niveau du donjon et du temps ayant été nécessaire à sa complétion, avec une nette priorité sur le niveau de difficulté.
+Raider.io est un site communautaire, spécialisé dans le suivi et le classement des performances en donjons mythique+ et en raids. Il est largement utilisé par les joueurs pour évaluer leur progression personnelle, rechercher des groupes ou des guildes, et suivre les classements mondiaux. Le site possède son propre api, nommé [Raider.IO Developer API](https://raider.io/api), qui a été utilisé afin d'extraire les informations des meilleurs donjons mythiques+. Ce mode de jeu est le plus populaire parmi les joueurs. Chaque groupe peut être constitué de maximum 5 joueurs avec en général 1 tank, 1 soigneur et 3 dps. Les donjons mythiques+ possèdent un niveau de difficulté croissant et la réussite du défi offre la possibilité de passer au niveau supérieur. L'objectif pour les joueurs est de tuer 100% des ennemis requis dans l'instance ainsi que l'entièrté des boss avant la fin du temps imparti. Le classement est généré en fonction du niveau du donjon et du temps ayant été nécessaire à sa complétion, avec une nette priorité sur le niveau de difficulté.
 
 ## Base de données
 Chaque entrée de la base de données représente un donjon, chaque donjon possède les variables suivantes : `rank`, `dungeon` et `roster`. Et à l'intérieur du `roster` on a les variables suivantes : `id`, `playerName`, `role`, `classe`, `race`, `faction`, `realm` et `region` pour chaque joueur ayant participé au donjon.
@@ -18,11 +18,11 @@ Chaque entrée de la base de données représente un donjon, chaque donjon poss�
 `roster` : groupe des personnages ayant effectué le donjon.
 - `id` : id du personnage.
 - `playerName` : nom du personnage.
-- `role` : role du personnage, 3 possiblités :
+- `role` : rôle du personnage, 3 possibilités :
   - Tank
   - Heal
   - DPS
-- `classe` : classe du personne, 13 possiblités :
+- `classe` : classe du personnage, 13 possibilités :
   - Guerrier (warrior)
   - Chasseur (hunter)
   - Mage (mage)
@@ -35,8 +35,8 @@ Chaque entrée de la base de données représente un donjon, chaque donjon poss�
   - Moine (monk)
   - Chasseur de démon (demon hunter)
   - Chevalier de la mort (death knight)
-  - Evocateur (evoker)
-- `race` : race du personnage, 25 possiblités :
+  - Évocateur (evoker)
+- `race` : race du personnage, 25 possibilités :
   - Humain
   - Nain
   - Elfe de la nuit
@@ -60,13 +60,13 @@ Chaque entrée de la base de données représente un donjon, chaque donjon poss�
   - Sacrenuit
   - Tauren de Haut-Roc
   - Orc mag'har
-  - Troll zandlari
+  - Troll zandalari
   - Vulpérin
 - `faction` :
   - Alliance
   - Horde
 - `realm` : nom du serveur en jeu du personnage.
-- `region` : nom region du personnage, 5 possiblités :
+- `region` : nom région du personnage, 5 possibilités :
   - Europe
   - United States & Oceania
   - China
@@ -96,12 +96,12 @@ Les <ins>**liens**</ins> correspondent au donjon. Un lien existe entre deux joue
 
 ## Interface & Fonctionnalités
 
-L'interface est composé d'un titre, de deux selecteurs, d'une légende des classes, d'une indication sur les fonctionnalités claviers d'interaction ainsi que de l'espace reservé au réseau.
+L'interface est composée d'un titre, de deux sélecteurs, d'une légende des classes, d'une indication sur les fonctionnalitées claviers d'interaction ainsi que de l'espace reservée au réseau.
 
-### Les Selecteurs
+### Les Sélecteurs
 ![Dashboard view](/figures/dash2.png)
 
-Le <ins>**premier selecteur**</ins> permet de <ins>**choisir une région</ins>** dans laquelle le jeu est disponible. Ces régions étant fermées les unes aux autres, il est important que chacune possède leur propre visualisation (deux joueurs de régions différentes ne peuvent pas jouer ensemble). Les régions disponibles dans le selecteur sont inspiré de la variable `region`, soit : `Europe`, `Etats-Unis`, `Chine`, `Taïwan` et `Corée du Sud`.
+Le <ins>**premier sélecteur**</ins> permet de <ins>**choisir une région</ins>** dans laquelle le jeu est disponible. Ces régions étant fermées les unes aux autres, il est important que chacune possède leur propre visualisation (deux joueurs de régions différentes ne peuvent pas jouer ensemble). Les régions disponibles dans le sélecteur sont inspiré de la variable `region`, soit : `Europe`, `Etats-Unis`, `Chine`, `Taïwan` et `Corée du Sud`.
 
 Le <ins>**deuxième selecteur**</ins> définie le <ins>**nombre d'instance</ins>**, autrement dit le nombre de donjon qui sera utilisé pour construire le réseau. Si on sélectionne le nombre d'instance 160, cela veut dire que le réseau contient les 160  premiers donjons du classement raider.io selon leur classement. Le nombre minimum est 20 et s'incrémente de 20 jusqu'à atteindre 200 (20, 40, 60, ..., 200). 20 correspond au nombre maximum de donjon que l'on peut recolter en une fois avec une requête de l'api raider.io.
 
