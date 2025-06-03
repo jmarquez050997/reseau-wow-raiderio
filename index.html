@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reseau Raider.io</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+    <script src="script.js" defer></script>
+
+    <h1 id="page-title">Visualisation en réseau de joueurs de World of Warcraft – Donjons Mythiques+</h1>
+
+    <div id="header">
+        <div class="left">Auteur : Jonathan Marquez</div>
+        <div class="right">Source des données : <a href="https://raider.io/" target="_blank">Raider.IO</a></div>
+      </div>
+
+    <div id="controls">
+        <div>
+            <label for="server-select">Choisissez une région :</label>
+            <select id="server-select">
+                <option value="eu">Europe</option>
+                <option value="us">États-Unis</option>
+                <option value="cn">Chine</option>
+                <option value="tw">Taïwan</option>
+                <option value="kr">Corée du Sud</option>
+            </select>
+        </div>
+        <div>
+            <label for="run-count">Nombre d'instance :</label>
+            <select id="run-count">
+                <option value="20">20</option>
+                <option value="40">40</option>
+                <option value="60">60</option>
+                <option value="80">80</option>
+                <option value="100">100</option>
+                <option value="120">120</option>
+                <option value="140">140</option>
+                <option value="160">160</option>
+                <option value="180">180</option>
+                <option value="200">200</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="legend"></div>
+    <div id="controls-legend">
+        <h3>Raccourcis clavier</h3>
+        <ul>
+            <li><strong>1</strong> : changer la taille des joueurs (noeuds)</li>
+            <li><strong>2</strong> : changer largeur et couleur des liens</li>
+            <li><strong>3</strong> : changer la force de collision</li>
+        </ul>
+    </div>
+    <div id="tooltip"></div>
+</body>
+</html>
