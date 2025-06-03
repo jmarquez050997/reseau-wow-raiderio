@@ -102,6 +102,8 @@ Le <ins>**premier selecteur**</ins> permet de choisir une région dans laquelle 
 
 Le <ins>**deuxième selecteur**</ins> définie le nombre d'instance, autrement dit le nombre de donjon qui sera utilisé pour construire le réseau. Si on sélectionne le nombre d'instance 100, cela veut dire que le réseau contient les 100 meilleurs premiers donjons du classement raider.io. Le nombre minimum est 20 et s'incrémente de 20 en 20 jusqu'à atteindre 200 (20, 40, 60, ..., 200). 20 correspond au nombre maximum de donjon que l'on peut recolter en une fois avec une requête de l'api raider.io
 
+![Dashboard view](/figures/dash2.png)
+
 
 ## Mise à jour des données
 
