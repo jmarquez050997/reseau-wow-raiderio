@@ -13,14 +13,28 @@ Chaque entré de la base de données représente un donjon
 
 `rank` : classement du donjon
 `dungeon` : nom du donjon
-`roster` : groupe ayant effectué le donjon
-`id` : id du joueur
-`playerName` : nom du joueur
-`role` : role du joueur, 3 possiblités :
+`roster` : groupe des personnages ayant effectué le donjon
+`id` : id du personnage
+`playerName` : nom du personnage
+`role` : role du personnage, 3 possiblités :
 - Tank
 - Heal
 - DPS
-`race` : race du personnage du joueur
+`classe` : classe du personne, 13 possiblités :
+- Guerrier (warrior)
+- Chasseur (hunter)
+- Mage (mage)
+- Voleur (rogue)
+- Prêtre (priest)
+- Démoniste (warlock)
+- Paladin (paladin)
+- Druide (druid)
+- Chaman (shaman)
+- Moine (monk)
+- Chasseur de démon (demon hunter)
+- Chevalier de la mort (death knight)
+- Evocateur (evoker)
+`race` : race du personnage, 25 possiblités :
 - Humain
 - Nain
 - Elfe de la nuit
@@ -46,3 +60,4 @@ Chaque entré de la base de données représente un donjon
 - Orc mag'har
 - Troll zandlari
 - Vulpérin
+`faction` :
