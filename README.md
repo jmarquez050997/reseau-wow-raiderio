@@ -133,7 +133,7 @@ Windows et Mac OS :
 <ins>**AUCUNE CLEF API N'EST NECESSAIRE POUR LANCER LA VISUALISATION</ins>**.
 
 ## Mise à jour des données
-Le choix par défaut au premier lancement est Europe pour la région et 20 pour le nombre d'instance.
+Le choix par défaut au premier lancement est Europe pour la région et 20 pour le nombre d'instance. A l'initialisation de la page ainsi qu'à chaque changement dans l'un des deux selecteurs, les données sont automatiquement récupérées et actualisées grâce à l'envoie des requêtes API adéquates. Le chargement de la visualisation peut avoir une latence de 1-2 secondes selon sa taille.
 
 ## A propos du Reseau World of Warcraft mythique+
 
