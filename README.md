@@ -117,9 +117,16 @@ Le <ins>**deuxième selecteur**</ins> définie le <ins>**nombre d'instance</ins>
 
 - <ins>**Zoom</ins>** à l'aide de la molette de la souris
 - <ins>**Déplacement</ins>** du réseau sur la page en gardant clic-droit appuyé avec le mouvement désiré.
-- Au survol de la souris sur une node / un joueur, vous pouvez faire ressortir son <ins>**sous-réseau</ins>** ainsi que les <ins>**informations du joueur</ins>**.
+- Au survol de la souris sur une node / un joueur, vous pouvez faire ressortir son <ins>**sous-réseau</ins>** (tous les autres joueurs ayant effectué au moins un donjon avec le joueuer) ainsi que les <ins>**informations du joueur</ins>**.
+
 ## Installation
 
+Ce projet n'est pas hébergé sur un serveur, il faut donc le faire tourner localement sur votre machine. Voici un exemple pour le lancer à partir du logiciel Visual Studio Code :
+
+Windows et Mac OS :
+- Installer [Visual Studio Code](https://code.visualstudio.com/) selon votre OS.
+- Télécharger le projet reseau-wow-raiderio et l'extraire à l'emplacement désiré.
+- 
 ## Mise à jour des données
 
 ## A propos du Reseau World of Warcraft mythique+
