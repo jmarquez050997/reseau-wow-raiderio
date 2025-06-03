@@ -94,13 +94,14 @@ Les <ins>**liens**</ins> correspondent au donjon. Un lien existe entre deux joue
 | id player1  | id player2  | 2  | dungeonName2 |
 | ...  | ...  | ...  | ... |
 
-## Interface
+## Interface & Fonctionnalités
 
 L'interface est composé d'un titre, de deux selecteurs, d'une légende des classes, d'une indication sur les fonctionnalités claviers d'interaction ainsi que de l'espace reservé au réseau.
 
-Le <ins>**premier selecteur**</ins> permet de choisir une région dans laquelle le jeu est disponible. Ces régions étant fermées les unes aux autres, il est important que chacune possède leur propre visualisation (deux joueurs de régions différentes ne peuvent jouer ensemble). Les régions disponibles dans le selecteur sont inspiré de la variable `region`, soit : `Europe`, `Etats-Unis`, `Chine`, `Taïwan` et `Corée du Sud`.
+Le <ins>**premier selecteur**</ins> permet de choisir une région dans laquelle le jeu est disponible. Ces régions étant fermées les unes aux autres, il est important que chacune possède leur propre visualisation (deux joueurs de régions différentes ne peuvent pas jouer ensemble). Les régions disponibles dans le selecteur sont inspiré de la variable `region`, soit : `Europe`, `Etats-Unis`, `Chine`, `Taïwan` et `Corée du Sud`.
 
-Le <ins>**deuxième selecteur**</ins>
+Le <ins>**deuxième selecteur**</ins> définie le nombre d'instance, autrement dit le nombre de donjon qui sera utilisé pour construire le réseau. Si on sélectionne le nombre d'instance 100, cela veut dire que le réseau contient les 100 meilleurs premiers donjons du classement raider.io. Le nombre minimum est 20 et s'incrémente de 20 en 20 jusqu'à atteindre 200 (20, 40, 60, ..., 200). 20 correspond au nombre maximum de donjon que l'on peut recolter en une fois avec une requête de l'api raider.io
+
 
 ## Mise à jour des données
 
