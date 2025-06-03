@@ -120,14 +120,19 @@ Le <ins>**deuxième selecteur**</ins> définie le <ins>**nombre d'instance</ins>
 - Au survol de la souris sur une node / un joueur, vous pouvez faire ressortir son <ins>**sous-réseau</ins>** (tous les autres joueurs ayant effectué au moins un donjon avec le joueuer) ainsi que les <ins>**informations du joueur</ins>**.
 
 ## Installation
-
 Ce projet n'est pas hébergé sur un serveur, il faut donc le faire tourner localement sur votre machine. Voici un exemple pour le lancer à partir du logiciel Visual Studio Code :
 
 Windows et Mac OS :
 - Installer [Visual Studio Code](https://code.visualstudio.com/) selon votre OS.
-- Télécharger le projet reseau-wow-raiderio et l'extraire à l'emplacement désiré.
-- 
+- Télécharger le projet "reseau-wow-raiderio" en ZIP et l'extraire.
+- Ajouter l'extension "Live Server" dans Visual Studio Code.
+- Ouvrir le dossier r"eseau-wow-raider-io-main" dans Visual Studio Code.
+- Appuyer sur "Go Live" en bas à droite dans Visual Studio Code.
+
+<ins>**AUCUNE CLEF API N'EST NECESSAIRE POUR LANCER LA VISUALISATION</ins>**.
+
 ## Mise à jour des données
+Le choix par défaut au premier lancement est Europe pour la région et 20 pour le nombre d'instance.
 
 ## A propos du Reseau World of Warcraft mythique+
 
