@@ -96,29 +96,29 @@ Les <ins>**liens**</ins> correspondent au donjon. Un lien existe entre deux joue
 
 ## Interface & Fonctionnalités
 
-L'interface est composée d'un titre, de deux sélecteurs, d'une légende des classes, d'une indication sur les fonctionnalitées claviers d'interaction ainsi que de l'espace reservée au réseau.
+L'interface est composée d'un titre, de deux sélecteurs, d'une légende des classes, d'une indication sur les fonctionnalités claviers d'interaction ainsi que de l'espace reservée au réseau.
 
 ### Les Sélecteurs
 ![Dashboard view](/figures/dash2.png)
 
 Le <ins>**premier sélecteur**</ins> permet de <ins>**choisir une région</ins>** dans laquelle le jeu est disponible. Ces régions étant fermées les unes aux autres, il est important que chacune possède leur propre visualisation (deux joueurs de régions différentes ne peuvent pas jouer ensemble). Les régions disponibles dans le sélecteur sont inspiré de la variable `region`, soit : `Europe`, `Etats-Unis`, `Chine`, `Taïwan` et `Corée du Sud`.
 
-Le <ins>**deuxième selecteur**</ins> définie le <ins>**nombre d'instance</ins>**, autrement dit le nombre de donjon qui sera utilisé pour construire le réseau. Si on sélectionne le nombre d'instance 160, cela veut dire que le réseau contient les 160  premiers donjons du classement raider.io selon leur classement. Le nombre minimum est 20 et s'incrémente de 20 jusqu'à atteindre 200 (20, 40, 60, ..., 200). 20 correspond au nombre maximum de donjon que l'on peut recolter en une fois avec une requête de l'api raider.io.
+Le <ins>**deuxième sélecteur**</ins> définie le <ins>**nombre d'instance</ins>**, autrement dit le nombre de donjon qui sera utilisé pour construire le réseau. Si on sélectionne le nombre d'instance 160, cela veut dire que le réseau contient les 160 premiers donjons du classement raider.io selon leur classement. Le nombre minimum est 20 et s'incrémente de 20 jusqu'à atteindre 200 (20, 40, 60, ..., 200). 20 correspond au nombre maximum de donjons que l'on peut récolter en une fois avec une requête de l'api raider.io.
 
 ### Les Fonctionnalités clavier
 ![Dashboard view](/figures/dash3.png)
 
-- Press `1` : Changement de la taille des noeuds à partir d'un tableau contenant 3 possiblités préconfigurés [4, 6, 8].
-- Press `2` : Changement de la taille de la taille des liens à partir d'un tableau contenant 3 possiblités préconfigurés [0.5, 1.5, 2.5] et de la couleur des liens selon le tableau des couleurs suivant ["rgba(204,204,204,0.6)", "rgba(102,102,102,0.9)", "#000000"].
-- Press `3` : Changement de la la force de collisiion des noeuds à partir d'un tableau contenant 3 possiblités préconfigurés [10, 15, 20].
+- Press `1` : Changement de la taille des noeuds à partir d'un tableau contenant 3 possibilités préconfigurés [4, 6, 8].
+- Press `2` : Changement de la taille de la taille des liens à partir d'un tableau contenant 3 possibilités préconfigurés [0.5, 1.5, 2.5] et de la couleur des liens selon le tableau des couleurs suivant ["rgba(204,204,204,0.6)", "rgba(102,102,102,0.9)", "#000000"].
+- Press `3` : Changement de la force de collision des noeuds à partir d'un tableau contenant 3 possibilités préconfigurés [10, 15, 20].
 
 ### Les Fonctionnalités d'exploration
 ![Dashboard view](/figures/dash4.png)
 
 - <ins>**Zoom</ins>** à l'aide de la molette de la souris
-- <ins>**Déplacement du réseau</ins>** sur la page à l'aide d'un clic-gauche sur la page avec un mouvement de souris.
-- Au survol de la souris sur une node / un joueur, vous pouvez faire ressortir son <ins>**sous-réseau</ins>** (tous les autres joueurs ayant effectué au moins un donjon avec le joueuer) ainsi que les <ins>**informations du joueur</ins>** (nom, classe, race, rôle, royaume, région et faction).
-- <ins>**Déplacement d'un joueur<ins>** dans le réseau en gardant le clic-gauche enfoncé sur sa node avec un mouvement de souris.
+- <ins>**Déplacement du réseau</ins>** sur la page à l'aide d'un clic gauche sur la page avec un mouvement de souris.
+- Au survol de la souris sur une node / un joueur, vous pouvez faire ressortir son <ins>**sous-réseau</ins>** (tous les autres joueurs ayant effectué au moins un donjon avec le joueur) ainsi que les <ins>**informations du joueur</ins>** (nom, classe, race, rôle, royaume, région et faction).
+- <ins>**Déplacement d'un joueur<ins>** dans le réseau en gardant le clic gauche enfoncé sur sa node avec un mouvement de souris.
 
 ## Installation
 Ce projet n'est pas hébergé sur un serveur, il faut donc le faire tourner localement sur votre machine. Voici un exemple pour le lancer à partir du logiciel Visual Studio Code :
@@ -127,10 +127,10 @@ Windows et Mac OS :
 - Installer [Visual Studio Code](https://code.visualstudio.com/) selon votre OS.
 - Télécharger le projet "reseau-wow-raiderio" en ZIP et l'extraire.
 - Ajouter l'extension "Live Server" dans Visual Studio Code.
-- Ouvrir le dossier r"eseau-wow-raider-io-main" dans Visual Studio Code.
+- Ouvrir le dossier "reseau-wow-raider-io-main" dans Visual Studio Code.
 - Appuyer sur "Go Live" en bas à droite dans Visual Studio Code.
 
-<ins>**AUCUNE CLEF API N'EST NECESSAIRE POUR LANCER LA VISUALISATION</ins>**.
+<ins>**AUCUNE CLEF API N'EST NÉCESSAIRE POUR LANCER LA VISUALISATION</ins>**.
 
 ## Mise à jour des données
 Le choix par défaut au premier lancement est Europe pour la région et 20 pour le nombre d'instance. A l'initialisation de la page ainsi qu'à chaque changement dans l'un des deux selecteurs, les données sont automatiquement récupérées et actualisées grâce à l'envoie des requêtes API adéquates. Le chargement de la visualisation peut avoir une latence de 1-2 secondes selon sa taille.
