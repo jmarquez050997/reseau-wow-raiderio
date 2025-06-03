@@ -1,7 +1,3 @@
-////// CLEF API ///////
-const apiKey = ""; // <- Insérez votre clé API
-
-
 ////// FONCTION FETCH DES RUNS ///////
 async function fetchFilteredRuns(url_api) {
     try {
@@ -46,7 +42,7 @@ async function fetchAllRuns(region, count) {
     const totalPages = Math.ceil(count / runsPerPage);
 
     for (let page = 0; page < totalPages; page++) {
-        const url = `https://raider.io/api/v1/mythic-plus/runs?access_key=${apiKey}&season=season-tww-2&region=${region}&dungeon=all&page=${page}`;
+        const url = `https://raider.io/api/v1/mythic-plus/runs?access_key=&season=season-tww-2&region=${region}&dungeon=all&page=${page}`;
         const pageRuns = await fetchFilteredRuns(url);
         runs.push(...pageRuns);
 
