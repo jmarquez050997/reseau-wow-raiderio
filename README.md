@@ -105,12 +105,16 @@ Le <ins>**premier selecteur**</ins> permet de <ins>**choisir une région</ins>**
 
 Le <ins>**deuxième selecteur**</ins> définie le <ins>**nombre d'instance</ins>**, autrement dit le nombre de donjon qui sera utilisé pour construire le réseau. Si on sélectionne le nombre d'instance 160, cela veut dire que le réseau contient les 160  premiers donjons du classement raider.io selon leur classement. Le nombre minimum est 20 et s'incrémente de 20 jusqu'à atteindre 200 (20, 40, 60, ..., 200). 20 correspond au nombre maximum de donjon que l'on peut recolter en une fois avec une requête de l'api raider.io.
 
-### Les fonctionnalités clavier
+### Les Fonctionnalités clavier
 ![Dashboard view](/figures/dash3.png)
 
 - Press `1` : Changement de la taille des noeuds à partir d'un tableau contenant 3 possiblités préconfigurés [4, 6, 8].
 - Press `2` : Changement de la taille de la taille des liens à partir d'un tableau contenant 3 possiblités préconfigurés [0.5, 1.5, 2.5] et de la couleur des liens selon le tableau des couleurs suivant ["rgba(204,204,204,0.6)", "rgba(102,102,102,0.9)", "#000000"].
 - Press `3` : Changement de la la force de collisiion des noeuds à partir d'un tableau contenant 3 possiblités préconfigurés [10, 15, 20].
+
+### Les Fonctionnalités d'exploration
+![Dashboard view](/figures/dash4.png)
+
 
 ## Installation
 
