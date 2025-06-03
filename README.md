@@ -9,15 +9,15 @@ Visualisation en réseau des joueurs de mythique+ dans World of Warcraft d'aprè
 Raider.io est un site communautaire, spécialisé dans le suivi et le classement des performances en donjons mythique+ et en raids. Il est largement utilisé par les joueurs pour évaluer leur progression personnelle, rechercher des groupes ou des guildes, et suivre les classements mondiaux. Le site possède sa propre api, nommé Raider.IO Developer API (https://raider.io/api), qui a été utilisé afin d'extraire les informations des meilleurs donjons mythique+. Ce mode de jeu est le plus populaire parmis les joueurs. Chaque groupe peut être constitué de maximum 5 joueurs avec en général 1 tank, 1 soigneur et 3 dps. Les donjons mythique+ possèdent un niveau de difficulté croissant et la réussite du défi offre la possiblité de passer au niveau supérieur. L'objectif pour les joueurs est de tuer 100% des ennemis requis dans l'instance ainsi que l'entierté des boss avant la fin du temps imparti. Le classement est généré en fonction du niveau du donjon et du temps ayant été nécessaire à sa complétion, avec une nette priorité sur le niveau de difficulté.
 
 ## Base de données
-Chaque entré de la base de données représente un donjon
+Chaque entrée de la base de données représente un donjon, chaque donjon possède les variables suivantes : `rank`, `dungeon` et `roster`. Et à l'intérieur du roster on a les variables suivantes : `id`, `playerName`, `role`, `classe`, `race`, `faction`, `realm` et `region`.
 
-`rank` : classement du donjon (int)
+`rank` : classement du donjon.
 
-`dungeon` : nom du donjon (char)
+`dungeon` : nom du donjon.
 
-`roster` : id groupe des personnages ayant effectué le donjon
-- `id` : id du personnage
-- `playerName` : nom du personnage
+`roster` : groupe des personnages ayant effectué le donjon.
+- `id` : id du personnage.
+- `playerName` : nom du personnage.
 - `role` : role du personnage, 3 possiblités :
   - Tank
   - Heal
@@ -65,8 +65,8 @@ Chaque entré de la base de données représente un donjon
 - `faction` :
   - Alliance
   - Horde
-- `realm` : serveur du personnage (char), correspond au serveur en jeu
-- `region` : region du personnage
+- `realm` : nom du serveur en jeu du personnage.
+- `region` : nom region du personnage, 5 possiblités :
   - Europe
   - United States & Oceania
   - China
