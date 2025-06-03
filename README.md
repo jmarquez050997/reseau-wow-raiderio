@@ -17,15 +17,12 @@ Chaque entré de la base de données représente un donjon
 
 `roster` : id groupe des personnages ayant effectué le donjon
 - `id` : id du personnage
-
 - `playerName` : nom du personnage
-  
-  `role` : role du personnage, 3 possiblités :
+- `role` : role du personnage, 3 possiblités :
   - Tank
   - Heal
   - DPS
-  
-  `classe` : classe du personne, 13 possiblités :
+- `classe` : classe du personne, 13 possiblités :
   - Guerrier (warrior)
   - Chasseur (hunter)
   - Mage (mage)
@@ -39,8 +36,7 @@ Chaque entré de la base de données représente un donjon
   - Chasseur de démon (demon hunter)
   - Chevalier de la mort (death knight)
   - Evocateur (evoker)
-    
-  `race` : race du personnage, 25 possiblités :
+- `race` : race du personnage, 25 possiblités :
   - Humain
   - Nain
   - Elfe de la nuit
@@ -66,7 +62,13 @@ Chaque entré de la base de données représente un donjon
   - Orc mag'har
   - Troll zandlari
   - Vulpérin
-
-`faction` :
-- Alliance
-- Horde
+- `faction` :
+  - Alliance
+  - Horde
+- `realm` : serveur du personnage (char), correspond au serveur en jeu
+- `region` : region du personnage
+  - Europe
+  - United States & Oceania
+  - China
+  - Taiwan
+  - Korea (sud)
