@@ -94,4 +94,4 @@ Les <ins>**liens**</ins> correspondent au donjon. Un lien existe entre deux joue
 | id player1  | id player2  | 2  | dungeonName2 |
 | ...  | ...  | ...  | ... |
 
-Ceci représente les liens d'un seul donjon, l'opération a donc été répété pour chacun des donjons.
+## Interface
