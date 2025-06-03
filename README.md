@@ -95,3 +95,9 @@ Les <ins>**liens**</ins> correspondent au donjon. Un lien existe entre deux joue
 | ...  | ...  | ...  | ... |
 
 ## Interface
+
+## Mise à jour des données
+
+## A propos du Reseau World of Warcraft mythique+
+
+## Auteurs
