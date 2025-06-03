@@ -81,15 +81,17 @@ Les <ins>**noeuds**</ins> représentent tous les personnages ayant effectué un 
 Les <ins>**liens**</ins> correspondent au donjon. Un lien existe entre deux joueurs à partir du moment qu'ils ont effectué un donjon ensemble. Voici une illustration en guise d'exemple :
 | `Source`  | `Target` | `Rank` | `Dungeon` |
 | ------------- | ------------- | ------------- |------------- |
-| id player1  | id player2  | 1  | La Colonie |
-| id player1  | id player3  | 1  | La Colonie |
-| id player1  | id player4  | 1  | La Colonie |
-| id player1  | id player5  | 1  | La Colonie |
-| id player2  | id player3  | 1  | La Colonie |
-| id player2  | id player4  | 1  | La Colonie |
-| id player2  | id player5  | 1  | La Colonie |
-| id player3  | id player4  | 1  | La Colonie |
-| id player3  | id player5  | 1  | La Colonie |
-| id player4  | id player5  | 1  | La Colonie |
+| id player1  | id player2  | 1  | dungeonName1 |
+| id player1  | id player3  | 1  | dungeonName1 |
+| id player1  | id player4  | 1  | dungeonName1 |
+| id player1  | id player5  | 1  | dungeonName1 |
+| id player2  | id player3  | 1  | dungeonName1 |
+| id player2  | id player4  | 1  | dungeonName1 |
+| id player2  | id player5  | 1  | dungeonName1 |
+| id player3  | id player4  | 1  | dungeonName1 |
+| id player3  | id player5  | 1  | dungeonName1 |
+| id player4  | id player5  | 1  | dungeonName1 |
+| id player1  | id player2  | 2  | dungeonName2 |
+| ...  | ...  | ...  | ... |
 
 Ceci représente les liens d'un seul donjon, l'opération a donc été répété pour chacun des donjons.
