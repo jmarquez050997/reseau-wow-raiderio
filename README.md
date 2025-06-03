@@ -115,7 +115,9 @@ Le <ins>**deuxième selecteur**</ins> définie le <ins>**nombre d'instance</ins>
 ### Les Fonctionnalités d'exploration
 ![Dashboard view](/figures/dash4.png)
 
-
+- <ins>**Zoom</ins>** à l'aide de la molette de la souris
+- <ins>**Déplacement</ins>** du réseau sur la page en gardant clic-droit appuyé avec le mouvement désiré.
+- Au survol de la souris sur une node / un joueur, vous pouvez faire ressortir son <ins>**sous-réseau</ins>** ainsi que les <ins>**informations du joueur</ins>**.
 ## Installation
 
 ## Mise à jour des données
