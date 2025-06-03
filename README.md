@@ -136,6 +136,7 @@ Windows et Mac OS :
 Le choix par défaut au premier lancement est Europe pour la région et 20 pour le nombre d'instance. A l'initialisation de la page ainsi qu'à chaque changement dans l'un des deux selecteurs, les données sont automatiquement récupérées et actualisées grâce à l'envoie des requêtes API adéquates. Le chargement de la visualisation peut avoir une latence de 1-2 secondes selon sa taille.
 
 ## A propos du Reseau World of Warcraft mythique+
+La visualisation en réseau des donjons mythique+ de World of Warcraft offre un premier outil d'exploration dans cet écosystème gargantuesque. L'aspect social dans les MMORPG est une composante principale, mais il était intéressant de se demander si des liens pouvaient exister entre les meilleures joueurs. En tant que joueur, l'image qu'on se fait de ce cercle est cloisonné. L'idée dominante est que les meilleurs joueurs forment des équipes et ne compétitionne qu'avec ce groupe. Cette visualisation permet de prendre du recul face à cette représentation et de se rendre compte la situation est bien différente en fonction des régions. Certains groupes de joueurs restent effectivement avec leur équipe mais, on constate que plus on augmente le nombre d'instance, plus un réseau en parallèle se forme avec des liens entre des joueurs.
 
 ## Auteurs
 
